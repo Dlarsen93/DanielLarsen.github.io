@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WD230 Assignment Portal | Daniel Larsen | BYU-Idaho</title>
+    <title>WDD230 Assignment Portal | Daniel Larsen | BYU-Idaho</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
     <header>
-      <img src="Larsen Family.jpg" alt="Larsen Family Photo">
+      <div class="header-box">
+      <div class="family-Image"><img src="Larsen Family_ (87).JPG"  alt="Larsen Family Photo" width="370px" height="200px"></div>
       <h1>Daniel Larsen</h1>
+      </div>
     </header>
     <nav>
       <!-- future main menu -->
     </nav>
     <main>
-      <h2>CIT 230 - Assignment Portal</h2>
+      <h2>WDD 230 - Assignment Portal</h2>
       <ul>
         <li>Lesson 02: <a href="basicpage.html">Assignment Link</a></li>
         <li>Lesson 03: <a href="basicpage.html">Assignment Link</a></li>
@@ -22,7 +28,11 @@
       </ul>   
     </main>
     <footer>
+      <div class="footer-box">
       <p>&copy; 2020 Daniel Larsen | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+      <span id="lastModified"></span>
+      <script src="dateTime.js"></script>
+    </div>
     </footer>
   </body>
 </html>
