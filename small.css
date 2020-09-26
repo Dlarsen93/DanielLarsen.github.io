@@ -1,0 +1,65 @@
+body{
+    background-color:#986db1;
+    text-align: center;
+    margin: auto;
+    color:white;
+}
+
+.header-box{
+    background-image: url(./headfoot.jpg);
+    border-radius: 50px 50px 0 0;
+    padding: 0.5em;
+    border: 1px solid rgb(5, 5, 5);
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.family-Image{
+    float: right;
+    border: .45em solid ;
+    border-radius: 50px;
+}
+
+.footer-box{
+  background-image: url(./headfoot.jpg);
+  border-radius: 0 0 50px 50px;
+  padding: 0.5em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+li{
+  list-style: none;
+}
+
+h2{
+  text-align: center;
+}
+
+img{
+  border-radius: 50px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'DM Serif Text', serif;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+p{
+  font-family: 'Patrick Hand', cursive;
+  color:whitesmoke;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 0.8rem;
+}
