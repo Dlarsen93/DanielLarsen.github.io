@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This pages will shows a plan of a weather site divied in four">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./js/main.js">
+
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img class="Main logo" src="../Lesson 3/official site logo.JPG" alt="Site plan logo" />
+        </picture>
+        <section class="title">
+            <h1>My Perfect Weather</h1>
+            <div class="site-motto">Perfect weather for a perfect day.</div>
+        </section>
+    </header>
+        <nav class="main-nav">
+            <button onclick="toggleMenu()">Menu</button>
+            <ul class= "navigation responsive">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox1">Hero w/ Weather Summary</div>
+        <div class="contentbox2">5 day Fircast</div>
+        <div class="contentbox1">Article</div>
+        <div class="contentbox2">Contact Info</div>
+    </main><br>
+
+    <footer>
+        <div class="footerButton">
+      <p>&copy; 2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+      <span id="lastModified"></span>
+      <script src="../dateTime.js"></script>
+      <button class="home-button" onclick="window.location.href='/index.html'">Assignment Portal</button>
+    </div>
+        
+    </footer>
+</body>
+
+</html>
