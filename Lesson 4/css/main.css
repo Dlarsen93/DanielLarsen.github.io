@@ -84,29 +84,18 @@
     border-style: ridge;
     border-width: thick;
   }
-  
-  .footerButton {
-      display: grid;
-      grid-template-columns: 100em;
-      grid-template-rows: 5em;
-      text-align: center;
-      background-color: var(--secondary-color);
-      border-radius: 0 0 15px 15px;
-      padding-top: .5em;
-      white-space: normal; 
-  }
-  
+   
   .contentbox2 {
       background-color: var(--secondary-color);
-      border-radius: 25px;
-      padding: 7px;
+      padding: 20px;
+      margin: 25px;
       white-space: normal;
   }
   
   .contentbox1 {
       background-color: var(--accent1-color);
-      border-radius: 25px;
-      padding: 7px;
+      padding: 20px;
+      margin: 25px;
       white-space: normal;
   }
   
