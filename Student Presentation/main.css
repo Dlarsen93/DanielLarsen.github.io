@@ -1,0 +1,73 @@
+html {
+    background-color: rgb(170, 211, 245);
+}
+
+body {
+    background-color: rgb(220, 231, 238);
+    font-family: 'Patrick Hand', cursive;
+}
+.footer-box{
+    background-color: midnightblue;
+    border-radius: 0 0 50px 50px;
+    padding: 0.5em;
+    border: 1px solid black;
+    text-align: center;
+    color:white;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+  }
+  nav {
+    background-color: rgb(45, 126, 202);
+    font-family: 'DM Serif Display', serif; 
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid ;
+  }
+  
+  nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+  
+  nav ul li .active a { background-color: rgba(0,0,0,0.2); color:#fff}
+  
+  .navigation {
+      list-style: none;
+      padding: 0;
+  }
+  .navigation li:first-child {
+      display: block;
+  }
+  .navigation li {
+      display: none;
+  }
+  .navigation a {
+      display: block;
+      padding: 0.75rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+    
+  }
+  .navigation a:hover {
+      color: black;
+      background-color: navajowhite;
+  }
+  
+  .responsive li {
+      display: block;
+  }
