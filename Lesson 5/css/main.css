@@ -94,6 +94,10 @@
     font-size: 150%;
   }
 
+  .active {
+    border-bottom: solid 2px #beffc7;
+  }
+
   .friday-alert p {
     margin: 0;
     font-size: 20;
@@ -102,6 +106,7 @@
     width:100%;
     height: 30em; 
     border-radius: 0 0 0 0;
+    border: none;
   }
 
   .herodiv {
@@ -112,7 +117,6 @@
   }
   .hero-ph {
     margin: 10px auto;
-    border: 1px solid #333;
     width: 100%;
     height: 250px;
   }

@@ -53,13 +53,29 @@ nav ul li .active a { background-color: rgba(0,0,0,0.2); color:#fff}
 	text-decoration: none;
 	color: white;
   font-weight: 700;
-  
 }
 .navigation a:hover {
 	color: black;
-	background-color: #beffc7;
+  background-color: #beffc7;
+  border-bottom: solid 2px #5f1721;
 }
 
 .responsive li {
 	display: block;
+}
+
+.heroimg {
+  margin-top: 0;
+  padding-right: 5.5em;
+}
+
+.heroimg img {
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+}
+
+.herodiv {
+  margin: 5px auto;
+  position: relative;
 }
