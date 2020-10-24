@@ -1,0 +1,273 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #114b5f;
+    --secondary-color: #1b998b;
+    --accent1-color: #beffc7;
+    --accent2-color: #4f000b;
+    --accent3-color:#5f1721;
+  /* change the values below to your chosen font(s) */
+   
+  }
+  
+  html {
+      background-color: var(--primary-color);
+  }
+  body {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+  }
+
+  main {
+      padding: 1em;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  img {
+    display: flex;
+    border-radius: 25px;
+    border: solid;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Patrick Hand', cursive;
+      color: var(--headline-color-on-white);
+  }
+  header, footer {
+    background-color: var(--accent1-color);
+    padding: 1em;
+    text-align: center;
+  }
+
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px 50px 0 0;
+      border-color: var(--primary-color);
+      border-style: ridge;
+      border-width: thick;
+  }
+
+  header img {
+      width: 75%;
+  }
+
+  .title {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5em;
+  }
+
+  .title h1 {
+      color:var(--accent2-color)
+  }
+
+  .site-motto {
+    font-family: 'Reenie Beanie';
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  p, ul ,ol {
+    font-family: 'DM Serif Text', serif;
+    color: var(--paragraph-color);
+    padding: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    border-color: var(--primary-color);
+    border-style: ridge;
+    border-width: thick;
+  }
+   
+
+  .friday-alert {
+    background-color: #e4e01d;
+    color: black;
+    padding: 1.5em;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive; 
+    font-size: 150%;
+  }
+
+  .active {
+    border-bottom: solid 2px #beffc7;
+  }
+
+  .friday-alert p {
+    margin: 0;
+    font-size: 20;
+  }
+
+  /*///////////////////////Hero image and weather summary///////////////////////////*/
+
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
+    row-gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  #hero h2 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+    text-align: center;
+  }
+  
+  #hero img, #hero picture {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    /* border-radius: 5px; */
+    z-index: 0;
+  }
+  
+  #weather-summary {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: black;
+    background-color: rgba(190, 255, 199);
+    border-radius: 25px;
+    z-index: 2;
+    
+  }
+  
+  #hero table {
+    width: 100%;
+  }
+  
+  #hero table th {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+  
+  #hero table tr:nth-child(1) td {
+    padding-top: 10px;
+  }
+  
+  #hero table td:nth-child(1) {
+    width: 50%;
+    padding-right: 5px;
+    text-align: right;
+  }
+  
+  #hero table td:nth-child(2) {
+    color: var(--color-yellow);
+  }
+
+  /*///////////////////Weekly Forcast/////////////////////////*/
+  .weekly-forcast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+    background-color: var(--accent1-color);
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .forcast-image {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .col-head {
+    color: white;
+    background-color: var(--accent3-color);
+    font-size: large;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 45px;
+    margin: 20px;
+    height: 15px;
+  }
+
+  .data {
+    color: white;
+    background-color: var(--accent3-color);
+    padding: 10px;
+    text-align: center;
+  }
+
+
+ /*//////////////main article content////////////////////////////*/
+ #article-box {
+  color: white;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  background-color: var(--accent3-color);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+ }
+ .article-image {
+   width: 50%;
+   margin-top: 20px;
+   float: right;
+ }
+
+ /*/////////////////////Map and contact Information///////////////////////*/
+ #contact-map-info {
+   background-color: var(--accent1-color) ;
+   padding-top: 20px;
+   padding-bottom:5em ;
+   margin-top: 20px;
+   border-radius: 15px;
+ }
+
+ #contact-info {
+   float: center;
+ }
+
+.contact-details {
+  float: right;
+  text-align: left;
+}
+
+  /*///////////////////// Social Media Icons /////////////////////*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 50px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
