@@ -131,10 +131,8 @@
   }
   
   #weather-summary {
-    grid-column-start: 1;
+    grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
     margin-bottom: 15px;
     padding: 10px;
     color: black;
@@ -144,27 +142,11 @@
     
   }
   
-  #hero table {
-    width: 100%;
-  }
+  
   
   #hero table th {
     padding-bottom: 5px;
     border-bottom: 1px solid white;
-  }
-  
-  #hero table tr:nth-child(1) td {
-    padding-top: 10px;
-  }
-  
-  #hero table td:nth-child(1) {
-    width: 50%;
-    padding-right: 5px;
-    text-align: right;
-  }
-  
-  #hero table td:nth-child(2) {
-    color: var(--color-yellow);
   }
 
   /*///////////////////Weekly Forcast/////////////////////////*/
