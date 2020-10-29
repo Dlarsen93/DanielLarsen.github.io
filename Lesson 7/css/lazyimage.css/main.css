@@ -20,7 +20,22 @@ article img {
     transition: filter 0.5s;
 }
 
+header, footer {
+    padding: 0.1em;
+    text-align: center;
+    background-color: rgb(219, 148, 204);
+    margin: 1em;
+}
+
 header {
+    border-radius: 50px 50px 0 0;
+}
+
+footer {
+    border-radius: 0 0 50px 50px; 
+}
+
+/*header{
     border-radius: 50px 50px 0 0;
     padding: 0.1em;
     border: 1px solid  rgb(147, 50, 226);
@@ -45,4 +60,4 @@ footer {
     margin-top: 1em;
     list-style: none;
     color: rgb(104, 26, 73);
-  }
+  }*/
