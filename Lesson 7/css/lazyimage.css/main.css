@@ -3,11 +3,14 @@ html {
 }
 
 h1 {
-    color: rgb(236, 182, 214);
+    color: rgb(104, 26, 73);
     text-align: center;
 }
 
-
+main img {
+    box-shadow: 5px 10px #C490D1;
+    margin: .4rem ;
+}
 article img[data-src] {
     filter: blur(2em);
 }
@@ -16,3 +19,30 @@ article img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
+
+header {
+    border-radius: 50px 50px 0 0;
+    padding: 0.1em;
+    border: 1px solid  rgb(147, 50, 226);
+    text-align: left;
+    color: whitesmoke;
+    border-style: ridge;
+    border-width: thick;
+    background-color: rgb(219, 148, 204);
+    margin-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    border-color: rgb(147, 50, 226);
+    border-style: ridge;
+    border-width: thick;
+    background-color: rgb(219, 148, 204);
+    padding: 2em;
+    margin-top: 1em;
+    list-style: none;
+    color: rgb(104, 26, 73);
+  }
