@@ -1,19 +1,43 @@
 <!DOCTYPE html>
+<html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Daniel Larsen | Lazy Image Activity</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <meta name="description" content="Lazy load image Activity">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Syne+Mono&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="./css/lazyimage.css/main.css">
     </head>
     <body>
+        <main>
+            <h1>Lazy load Image Activity</h1>
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/nature">
+            </picture>
 
-        
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/animals">
+            </picture>
 
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/arch">
+            </picture>
+
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/people">
+            </picture>
+
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/tech">
+            </picture>
+
+            <picture>
+                <img src="http://via.placeholder.com/300x400" data-src="https://placeimg.com/300/400/people/grayscale">
+            </picture>
+        </main>
+
+        <script src="JS/lazy-image.js"></script>
     </body>
 </html>
