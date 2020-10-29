@@ -10,6 +10,7 @@ h1 {
 main img {
     box-shadow: 5px 10px #C490D1;
     margin: .4rem ;
+    border-radius: 50px;
 }
 article img[data-src] {
     filter: blur(2em);
