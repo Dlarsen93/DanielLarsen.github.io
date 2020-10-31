@@ -1,0 +1,44 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 35em) {
+	nav {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9eb+0,4f000b+100 */
+		background: -moz-linear-gradient(top,  #7db9eb 0%, #4f000b 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #7db9eb 0%,#4f000b 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #7db9eb 0%,#4f000b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9eb', endColorstr='#4f000b',GradientType=0 ); /* IE6-9 */
+
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	#weather-summary {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 10px 0 0 10px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+        transition-property: grid-column;
+        transition-duration: 4s;
+        transition-delay: 2s;
+	}
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: center;
+		align-content: center;
+		grid-gap: 5em;
+	}
+}
