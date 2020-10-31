@@ -112,8 +112,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
  .gallery {
      display: grid;
      grid-template-columns: 1fr;
-     margin: 10px;
-     
+     margin: 10px;   
  }
 
  .gallery figure {
@@ -121,12 +120,21 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
      font-size: large;
  }
 
+ .gallery figure img {
+   border-radius: 25px 25px 0px 0px;
+ }
+
  .gallery figcaption {
      display: block;
      background-color: var(--accent1-color);
      padding: 1em;
-     border-radius: 20px;
+     border-radius: 0px 0px 25px 25px;
  }
+
+ .gallery figure:hover {
+  box-shadow: 0px 0px 10px 10px #5f1721;
+  border-radius: 25px;
+   }
  
  /*/////////////////////Map and contact Information///////////////////////*/
  #contact-map-info {
