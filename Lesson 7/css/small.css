@@ -138,12 +138,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
  }
 
  #contact-info {
-   float: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
  }
 
 .contact-details {
-  float: right;
-  text-align: left;
+
+  text-align: center;
 }
 
 /*//////////////////////////////////Footer//////////////////////////////*/
@@ -156,6 +157,7 @@ footer {
     border-color: var(--primary-color);
     border-style: ridge;
     border-width: thick;
+    clear: both;
   }
 
   /*///////////////////// Social Media Icons /////////////////////*/
