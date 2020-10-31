@@ -45,6 +45,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   header, footer {
     background-color: var(--accent1-color);
     padding: 1em;
+    margin: .5em;
     text-align: center;
   }
 
