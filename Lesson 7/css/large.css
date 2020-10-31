@@ -1,5 +1,5 @@
 /* Media Query for medium+ views */
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 65em) {
 	nav {
 		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9eb+0,4f000b+100 */
 		background: -moz-linear-gradient(top,  #7db9eb 0%, #4f000b 100%); /* FF3.6-15 */
@@ -8,6 +8,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9eb', endColorstr='#4f000b',GradientType=0 ); /* IE6-9 */
 
 	}
+
 	.navigation {
 		display: flex;
 	}
@@ -39,6 +40,6 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		justify-content: center;
 		align-content: center;
-		grid-gap: 5em;
+		
 	}
 }
