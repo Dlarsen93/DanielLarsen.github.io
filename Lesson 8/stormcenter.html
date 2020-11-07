@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This pages will shows a plan of a weather site divied in four">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../Lesson 7/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/small.css">
+    <link rel="stylesheet" type="text/css" href="CSS/medium.css">
+    <link rel="stylesheet" type="text/css" href="CSS/large.css">
+    <link rel="shortc-ut icon" href="../images/favicon.ico.JPG">
+    
+    <title>Daniel Larsen | myperfectweather.com</title>
+
+    <header>
+        <picture>
+            <img class="Main logo" src="../Lesson 3/official site logo.JPG" alt="Site plan logo"/>
+        </picture>
+        <section class="title">
+            <h1>My Perfect Weather</h1>
+            <div class="site-motto">Perfect weather for a perfect day.</div>
+        </section>
+    </header>
+</head>
+
+<body>
+  
+  
+
+        
+    <div id= "hamberger" onclick= "toggleMenu()"></div>
+
+    <nav>
+        <ul  id= "navigaton" class="navigation">
+            <li><a id="ham" href="#"> &#9776;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../Lesson 6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class= "active"><a href="../Lesson 8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../Lesson 7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[A-Za-z, ]+" minlength="5" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="stormdate"></label>
+                <label class="top">Storm Severity
+                    <input list="stormtype" name="type">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class="top">Storm Severity Rating:
+                    <input name="stormseverity" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+                <label class="top">Storm Region
+                    <select name="region" id="regions" onchange="selectResponse()">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+                <div class="danger">User in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Comments: <textarea
+                        name="additional"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Report Storm" class="submitBtn">
+        </form>
+    </section>
+        
+        <div id= "contact-map-info">
+            <section id= "contact-info">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.5534552387!2d-111.70894797707247!3d40.25731378829574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C+UT!5e0!3m2!1sen!2sus!4v1558816084893!5m2!1sen!2sus" allowfullscreen></iframe>
+                <section class= "contact-details">
+                    <h3>My Perfect Weather</h3>
+                    
+                    <p><strong>Address:</strong> Preston, Idaho</p>  
+                    <p><strong>Phone #:</strong> 865-956-4856</p>
+                    <p><strong>Email:</strong> myperfectweather@gmail.com</p>
+                    
+                </section>
+            </section>
+        </div>
+    </main>
+    <br>
+    
+    <footer>
+        <div class="footerButton">
+      <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+      <span id="lastModified"></span>
+      <script src="../JS/dateTime.js"></script>
+      <sript src="js/windchill.js"></sript>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+         WebFont.load({
+            google: {
+            families: ['Patrick Hand', 'DM Serif Text', 'Reenie Beanie']
+            }
+        });
+      </script>
+      <br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    
+    </div>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src= "./JS/main.js"></script>
+</body>
+
+</html>
