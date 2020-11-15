@@ -1,0 +1,8 @@
+html {
+    padding: 5em;
+    background-color: lightgray;
+}
+img {
+    max-width: 50%;
+    margin: 1em;
+}

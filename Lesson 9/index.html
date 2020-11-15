@@ -26,13 +26,7 @@
     </header>
 </head>
 
-<body onload="saturdayBrunch()">
-    <div class= "friday-alert" style="display: none;">
-        Saturday = Pancake Breakfast in the Park! 9:00 A.M at City Park.
-    </div>
-  
-
-        
+<body>  
     <div id= "hamberger" onclick= "toggleMenu()"></div>
 
     <nav>
@@ -48,82 +42,17 @@
     </nav>
     
     <main>
-        <section id="hero">
-            <!--<div class="hero-ph"><img class="heroimg" src="./images/pexels-felix-mittermeier-957002.jpg" alt="Image of Preston Idaho"></div>"-->
-            <picture>
-                <source media="(min-width: 1100px)" srcset="Images/heroimage_1100.jpg">
-                <source media="(min-width: 800px)" srcset="Images/heroimage_800.jpg">
-                <source media="(min-width: 600px)" srcset="Images/heroimage_600.jpg">
-                <img src="Images/heroimage_350.jpg" alt="Bright Sunrise">
-            </picture>
 
-            <div id="weather-summary">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Weather Summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Currently:</td>
-                            <td>Sunny</td>
-                        </tr>
-                        <tr>
-                            <td>High:</td>
-                            <td><span id="temperature">30</span>&deg; F</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Chill:</td>
-                            <td><span id="windChill"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Humidity:</td>
-                            <td>50%</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Speed:</td>
-                            <td><span id="windSpeed">10</span> mph</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <picture class="home-image">
+            <source media="(min-width: 1200px)" srcset="images/home-image.1200.jpg">
+            <source media="(min-width: 800px)" srcset="images/home-image.800.jpg">
+            <img src="images/home-image.500.jpg" alt="Hay fields in Autumn">
+        </picture>
 
-        </section>
+        <div class="towns"></div>
 
-        
-
-        <h2>Weekly Forcast</h2>
-        <div class= "weekly-forcast">
-            <div class= "grid-col">
-                <span class= "col-head">Sunday</span>
-                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
-            <div class= "data">78&#176;f</div>
-            </div>
-            <div class= "grid-col">
-                <span class= "col-head">Monday</span>
-                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
-            <div class= "data">78&#176;f</div>
-            </div>
-            <div class= "grid-col">
-                <span class= "col-head">Tuesday</span>
-                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
-            <div class= "data">78&#176;f</div>
-            </div>
-            <div class= "grid-col">
-                <span class= "col-head">Wednesday</span>
-                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
-            <div class= "data">78&#176;f</div>
-            </div>
-            <div class= "grid-col">
-                <span class= "col-head">Thursday</span>
-                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
-            <div class= "data">78&#176;f</div>
-        </div>
-    </div>
-        
         <div id="article-box">
-            <img class= "article-image" src= "Images/Article photo.jpg" alt= "Child playing with dogs.">
+            <img class= "article-image" src= "../Lesson 6/Images/Article photo.jpg" alt= "Child playing with dogs.">
             <h2>Fall in full Swing</h2>
             <h3>By Ginger Sanderson</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam repellat neque molestiae natus autem dolorem? Est consequatur unde atque eius, molestias perspiciatis cupiditate voluptates fuga qui, nemo architecto iure non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, minus corrupti. Tempora, sint suscipit eum rem vitae, porro enim, molestias culpa nesciunt sapiente rerum eius dolores harum dolorem velit corporis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem cupiditate qui quos rem veniam vitae, magnam maxime facilis ea tempora laborum, dolores id culpa. Ipsa maiores nesciunt quaerat alias quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio alias necessitatibus. Animi cumque pariatur laudantium illum? Numquam omnis, dicta illum cum sed eum tempora molestias necessitatibus quis aliquid excepturi...<a href="">continue to full article</a>     </p>
@@ -148,7 +77,7 @@
     
     <footer>
         <div class="footerButton">
-      <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p> | <a href="../index.html">Main Portal | </a>
+      <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p> | <a href="../index.html">Main Portal | </a> | <a href="home-wireframes.html">Home Wire Frames |</a>
       <span id="lastModified"></span>
       <script src="../JS/dateTime.js"></script>
       <sript src="..js/windchill.js"></sript>
@@ -172,6 +101,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src= "./JS/main.js"></script>
+    <script src="JS/home-cards.js"></script>
 </body>
 
 </html>

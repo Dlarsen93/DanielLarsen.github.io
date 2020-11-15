@@ -37,4 +37,28 @@
 		grid-template-columns: 1fr 1fr;
 		
 	}
+
+	/*town cards*/
+	
+
+    .towns section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .towns section img {
+        width: 50%;
+        margin: 1em;
+    }
+
+    .towns div {
+        width: 50%;
+	}
+	
+	.towns section {
+        background-color: #beffc7;
+        padding: 2em;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
 }
