@@ -16,14 +16,14 @@ fetch(apiURL)
             let forcastCard = document.createElement('li');
             let weekday = document.createElement('h3');
             let forcastIcon = document.createElement('img');
-            let forca1stTemp = document.createElement('p');
+            let forcastTemp = document.createElement('p');
 
             //store text/content in the elements
             weekday.textContent = daysOfWeek[forcastDate.getDay()];
             forcastIcon.setAttribute('src', iconSrc);
             forcastIcon.setAttribute('alt', desc);
             forcastIcon.style.width = '4.4em';
-            forcastTemp.innerHTML = forcast[i].main.temp + '&#176;F';
+            forcastTemp.innerHT1L = forcast[i].main.temp + '&#176;F';
 
             //append elements to li item
             forcastCard.appendChild(weekday);
