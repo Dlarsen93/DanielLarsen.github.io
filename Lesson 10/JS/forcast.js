@@ -12,24 +12,24 @@ fetch(apiURL)
     for(let i = 0; i < forcast.length; i++){
       const forcastDate = new Date(forcast[i].dt_txt);
             let iconSrc = 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png';
-            let desc = forecast[i].weather[0].description;
+            let desc = forcast[i].weather[0].description;
             let forecastCard = document.createElement('li');
             let weekday = document.createElement('h3');
             let forecastIcon = document.createElement('img');
-            let forecastTemp = document.createElement('p');
+            let foreca1stTemp = document.createElement('p');
 
             //store text/content in the elements
             weekday.textContent = daysOfWeek[forcastDate.getDay()];
-            forecastIcon.setAttribute('src', iconSrc);
-            forecastIcon.setAttribute('alt', desc);
-            forecastIcon.style.width = '4.4em';
-            forecastTemp.innerHTML = forecast[i].main.temp + '&#176;F';
+            forcastIcon.setAttribute('src', iconSrc);
+            forcastIcon.setAttribute('alt', desc);
+            forcastIcon.style.width = '4.4em';
+            forcastTemp.innerHTML = forecast[i].main.temp + '&#176;F';
 
             //append elements to li item
-            forecastCard.appendChild(weekday);
-            forecastCard.appendChild(forecastIcon);
-            forecastCard.appendChild(forecastTemp);
-            forecastCard.classList.add("card");
+            forcastCard.appendChild(weekday);
+            forcastCard.appendChild(forecastIcon);
+            forcastCard.appendChild(forecastTemp);
+            forcastCard.classList.add("card");
 
             document.getElementById('fiveForecast').appendChild(forecastCard);
 
