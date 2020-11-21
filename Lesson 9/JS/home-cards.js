@@ -27,7 +27,7 @@ fetch(requestURL)
                 founded.textContent = "Year Founded: " + towns[i].yearFounded;
                 population.textContent = "Pop: " + towns[i].currentPopulation;
                 rain.textContent = "Yearly Rain Fall: " + towns[i].averageRainfall;
-                image.setAttribute("src", "images/", + towns[i].photo);
+                image.setAttribute("src", "images/" + towns[i].photo);
                 image.setAttribute('alt', towns[i].name);
 
                 textBox.append(h2, motto, founded, population, rain);

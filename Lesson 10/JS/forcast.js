@@ -19,7 +19,7 @@ fetch(apiURL)
             let forecastTemp = document.createElement('p');
 
             //store text/content in the elements
-            weekday.textContent = weekdays[foreDate.getDay()];
+            weekday.textContent = weekdays[forecastDate.getDay()];
             forecastIcon.setAttribute('src', iconSrc);
             forecastIcon.setAttribute('alt', desc);
             forecastIcon.style.width = '4.4em';
