@@ -31,7 +31,7 @@ fetch(apiURL)
             forcastCard.appendChild(forcastTemp);
             forcastCard.classList.add("card");
 
-            document.getElementById('fiveforcast').appendChild(forcastCard);
+            document.getElementById('fiveDayForcast').appendChild(forcastCard);
 
     }
 });
