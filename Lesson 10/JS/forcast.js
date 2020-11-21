@@ -23,7 +23,7 @@ fetch(apiURL)
             forcastIcon.setAttribute('src', iconSrc);
             forcastIcon.setAttribute('alt', desc);
             forcastIcon.style.width = '4.4em';
-            forcastTemp.innerHT1L = forcast[i].main.temp + '&#176;F';
+            forcastTemp.innerHTML = forcast[i].main.temp + '&#176;F';
 
             //append elements to li item
             forcastCard.appendChild(weekday);
