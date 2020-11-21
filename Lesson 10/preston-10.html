@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This pages will shows a plan of a weather site divied in four">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/small.css">
+    <link rel="stylesheet" type="text/css" href="CSS/medium.css">
+    <link rel="stylesheet" type="text/css" href="CSS/large.css">
+    <link rel="shortc-ut icon" href="../images/favicon.ico.JPG">
+    
+    <title>Daniel Larsen | myperfectweather.com</title>
+
+    <header>
+        <picture>
+            <img class="Main logo" src="../Lesson 3/official site logo.JPG" alt="Site plan logo"/>
+        </picture>
+        <section class="title">
+            <h1>My Perfect Weather</h1>
+            <div class="site-motto">Perfect weather for a perfect day.</div>
+        </section>
+    </header>
+</head>
+
+<body onload="saturdayBrunch()">
+    <div class= "friday-alert" style="display: none;">
+        Saturday = Pancake Breakfast in the Park! 9:00 A.M at City Park.
+    </div>
+  
+
+        
+    <div id= "hamberger" onclick= "toggleMenu()"></div>
+
+    <nav>
+        <ul  id= "navigaton" class="navigation">
+            <li><a id="ham" href="#"> &#9776;</a></li>
+            <li><a href="../Lesson 9/index.html">Home</a></li>
+            <li class= "active"><a href="../Lesson 10/preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../Lesson 8/stormcenter.html">Storm Senter</a></li>
+            <li><a href="../Lesson 7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="hero">
+            <picture class="hero-ph">
+                <source media="(min-width: 1100px)" srcset="images/heroImg.1100.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg.800.jpg">
+                <source media="(min-width: 600px)" srcset="images/heroImg.600.jpg">
+                <img src="images/heroImg.350.jpg" alt="Bright Sunrise">
+            </picture>
+
+            <div id="weather-summary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Weather Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="temperature">30</span>&deg; F</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed">10</span> mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        
+
+        <h2>Weekly Forcast</h2>
+        <div class= "weekly-forcast">
+            <div class= "grid-col">
+                <span class= "col-head">Sunday</span>
+                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
+            <div class= "data">78&#176;f</div>
+            </div>
+            <div class= "grid-col">
+                <span class= "col-head">Monday</span>
+                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
+            <div class= "data">78&#176;f</div>
+            </div>
+            <div class= "grid-col">
+                <span class= "col-head">Tuesday</span>
+                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
+            <div class= "data">78&#176;f</div>
+            </div>
+            <div class= "grid-col">
+                <span class= "col-head">Wednesday</span>
+                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
+            <div class= "data">78&#176;f</div>
+            </div>
+            <div class= "grid-col">
+                <span class= "col-head">Thursday</span>
+                <img class= "forcast-image" src= "Images/SiteLogo.JPG" alt= "Sunny day">
+            <div class= "data">78&#176;f</div>
+        </div>
+    </div>
+        
+        <div id="article-box">
+            <img class= "article-image" src= "Images/Article photo.jpg" alt= "Child playing with dogs.">
+            <h2>Fall in full Swing</h2>
+            <h3>By Ginger Sanderson</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam repellat neque molestiae natus autem dolorem? Est consequatur unde atque eius, molestias perspiciatis cupiditate voluptates fuga qui, nemo architecto iure non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, minus corrupti. Tempora, sint suscipit eum rem vitae, porro enim, molestias culpa nesciunt sapiente rerum eius dolores harum dolorem velit corporis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem cupiditate qui quos rem veniam vitae, magnam maxime facilis ea tempora laborum, dolores id culpa. Ipsa maiores nesciunt quaerat alias quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio alias necessitatibus. Animi cumque pariatur laudantium illum? Numquam omnis, dicta illum cum sed eum tempora molestias necessitatibus quis aliquid excepturi...<a href="">continue to full article</a>     </p>
+        
+        </div>
+
+        <div id= "contact-map-info">
+            <section id= "contact-info">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.5534552387!2d-111.70894797707247!3d40.25731378829574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C+UT!5e0!3m2!1sen!2sus!4v1558816084893!5m2!1sen!2sus" allowfullscreen></iframe>
+                <section class= "contact-details">
+                    <h3>My Perfect Weather</h3>
+                    
+                    <p><strong>Address:</strong> Preston, Idaho</p>  
+                    <p><strong>Phone #:</strong> 865-956-4856</p>
+                    <p><strong>Email:</strong> myperfectweather@gmail.com</p>
+                    
+                </section>
+            </section>
+        </div>
+    </main>
+    <br>
+    
+    <footer>
+        <div class="footerButton">
+      <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+      <span id="lastModified"></span>
+      <script src="../JS/dateTime.js"></script>
+      <sript src="js/windchill.js"></sript>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+         WebFont.load({
+            google: {
+            families: ['Patrick Hand', 'DM Serif Text', 'Reenie Beanie']
+            }
+        });
+      </script>
+      <br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    
+    </div>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src= "./JS/main.js"></script>
+    <script src="JS/forcast.js"></script>
+</body>
+
+</html>
