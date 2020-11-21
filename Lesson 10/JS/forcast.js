@@ -10,7 +10,7 @@ fetch(apiURL)
 
     const daysOfWeek = ['Sunday', 'Monday', 'Tursday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     for(let i = 0; i < forcast.length; i++){
-      const forecastDate = new Date(forecast[i].dt_txt);
+      const forcastDate = new Date(forcast[i].dt_txt);
             let iconSrc = 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png';
             let desc = forecast[i].weather[0].description;
             let forecastCard = document.createElement('li');
@@ -19,7 +19,7 @@ fetch(apiURL)
             let forecastTemp = document.createElement('p');
 
             //store text/content in the elements
-            weekday.textContent = weekdays[forecastDate.getDay()];
+            weekday.textContent = daysOfWeek[forcastDate.getDay()];
             forecastIcon.setAttribute('src', iconSrc);
             forecastIcon.setAttribute('alt', desc);
             forecastIcon.style.width = '4.4em';
