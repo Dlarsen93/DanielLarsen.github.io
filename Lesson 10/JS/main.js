@@ -1,10 +1,6 @@
 document.getElementById('ham').addEventListener('click', function() {document.querySelector('.navigation').classList.toggle('responsive')});
-
+//Do I need the mainnav?
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
-//const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-//document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
-//document.getElementById("copyright-year").innerText = new Date().getFullYear();
 
 function saturdayBrunch() {
     var daynumber = new Date();
