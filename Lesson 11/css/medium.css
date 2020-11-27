@@ -1,0 +1,83 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 35em) {
+	nav {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9eb+0,4f000b+100 */
+		background: #7db9eb; /* Old browsers */
+		background: -moz-linear-gradient(top,  #7db9eb 0%, #4f000b 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #7db9eb 0%,#4f000b 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #7db9eb 0%,#4f000b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9eb', endColorstr='#4f000b',GradientType=0 ); /* IE6-9 */
+
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	#weather-summary {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 10px 0 0 10px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+	}
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		
+	}
+
+	/*town cards*/
+	
+	.towns section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .towns section img {
+        width: 50%;
+        margin: 1em;
+    }
+
+    .towns div {
+        width: 50%;
+	}
+	
+	.towns section {
+        background-color: #beffc7;
+        padding: 2em;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+	}
+	
+	/*-----------weekly Forcast-----------*/
+	.forcast ul {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .forcast ul li {
+        margin: 0.5em 0.2em;
+        padding: 1.5em;
+        background-color: #beffc7;
+        color: #481620;
+    }
+
+    .forcast ul li i {
+        display: block;
+    }
+}

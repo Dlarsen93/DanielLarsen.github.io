@@ -1,0 +1,489 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #114b5f;
+    --secondary-color: #1b998b;
+    --accent1-color: #beffc7;
+    --accent2-color: #4f000b;
+    --accent3-color:#5f1721;
+  /* change the values below to your chosen font(s) */
+   }
+
+  /*--------------------------[GENERAL]---------------------------------*/
+  html {
+      background-color: var(--primary-color);
+  }
+  body {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 10px;
+  }
+
+  main {
+      padding: 1em;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  img {
+    display: flex;
+    border-radius: 25px;
+    border: solid;
+    width: 100%;
+    height: auto;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Patrick Hand', cursive;
+      color: var(--headline-color-on-white);
+  }
+
+  /*--------------------------[HEADER]---------------------------------*/
+  header, footer {
+    background-color: var(--accent1-color);
+    padding: 1em;
+    margin: .5em;
+    text-align: center;
+  }
+
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px 50px 0 0;
+      border-color: var(--primary-color);
+      border-style: ridge;
+      border-width: thick;
+  }
+
+  header img {
+      width: 75%;
+  }
+
+  .title {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5em;
+  }
+
+  .title h1 {
+      color:var(--accent2-color)
+  }
+
+  .site-motto {
+    font-family: 'Reenie Beanie';
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  p, ul ,ol {
+    font-family: 'DM Serif Text', serif;
+    color: var(--paragraph-color);
+    padding: 1em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+/*--------------------------[NAVIGATION]---------------------------------*/
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4f000b;
+  }
+  nav {
+    background-color: #4f000b;
+    font-family: 'DM Serif Display', serif; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+  }
+  
+  nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+  
+  nav ul li .active a { background-color: rgba(0,0,0,0.2); color:#fff}
+  
+  .navigation {
+      list-style: none;
+      padding: 0;
+  }
+  .navigation li:first-child {
+      display: block;
+  }
+  .navigation li {
+      display: none;
+  }
+  .navigation a {
+      display: block;
+      padding: 0.75rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    font-weight: 700;
+  }
+  .navigation a:hover {
+      color: black;
+    background-color: #beffc7;
+    border-bottom: solid 2px #5f1721;
+  }
+  
+  .responsive li {
+      display: block;
+  }
+
+  /*///////////////////////Hero image and weather summary///////////////////////////*/
+
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
+    row-gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  #hero h2 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+    text-align: center;
+  }
+  
+  #hero img, #hero picture {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+    /* border-radius: 5px; */
+    z-index: 0;
+  }
+  
+  #weather-summary {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: black;
+    background-color: rgba(190, 255, 199);
+    border-radius: 25px;
+    z-index: 2;
+    
+  }
+  
+  #hero table th {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+
+   /*///////////////////////////////Form///////////////////////////////////*/
+
+   form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #1b998b;
+    border-radius: 10px;
+    padding: 0.5rem 2%; 
+}
+form legend {
+    color:#1b998b;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+form label .top, form div {
+    display: block;
+    padding-top: 1rem;
+    color:#1b998b;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+form label.top, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #1b998b;
+    width: 85%;
+    max-width: 30rem;
+}
+form label.sbs {
+    display: block;
+    padding: 0.75em 0.75em;
+    color: #1b998b;
+}
+
+form .danger {
+    padding: 0.75em 0.75em;
+    text-transform: uppercase;
+}
+
+form label.sbs input {
+    width: auto;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1b998b;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 30rem;
+    font-size: 28px;
+}
+form input.submitBtn:hover {
+    background-color: #000;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form input, form textarea {
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.thanksResponse{
+  background-color: #1b998b;
+  text-align: center;
+  color: #beffc7;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+  /*///////////////////Weekly Forcast/////////////////////////*/
+
+  .weather-summary {
+    padding: 1.2em;
+    top: 1em;
+    left: 4.5em;
+  }
+  .card {
+    box-shadow: 5px 5px 3px #5f1721;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  #card {
+    display: none;
+  }
+  .for-heading {
+    color: #55ACEE;
+    text-align: center;
+    border: solid 5px #beffc7;
+    border-radius: 10px;
+    padding: .5em;
+
+  }
+  
+  /*--------------------------[Home Image]---------------------------------*/
+  .home-image {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+  }
+  /*--------------------------[HERO IMAGE]---------------------------------*/
+  .heroimg {
+    margin-top: 0;
+    padding-right: 5.5em;
+  }
+  
+  .heroimg img {
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .herodiv {
+    margin: 5px auto;
+    position: relative;
+  }
+
+/*--------------------------[FRIDAY ALERT]---------------------------------*/
+  .friday-alert {
+    background-color: #e4e01d;
+    color: black;
+    padding: 1.5em;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive; 
+    font-size: 150%;
+  }
+
+  .active {
+    border-bottom: solid 2px #beffc7;
+  }
+
+  .friday-alert p {
+    margin: 0;
+    font-size: 20;
+  }
+
+ /*--------------------------[IMAGE GALLERY]----------------------*/
+ .gallery {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin: 10px;   
+ }
+
+ .gallery figure {
+     text-align: center;
+     font-size: large;
+ }
+
+ .gallery figure img {
+   border-radius: 25px 25px 0px 0px;
+ }
+
+ .gallery figcaption {
+     display: block;
+     background-color: var(--accent1-color);
+     padding: 1em;
+     border-radius: 0px 0px 25px 25px;
+ }
+
+ /*--------------------------[Home Town Cards]--------------------*/
+ .towns h2 {
+  color: #4f000b;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.towns h3 {
+  color: #beffc7;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  background: #114b5f;
+  padding: 1em;
+  border-radius: 5px;
+}
+ .towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 0.5em;
+  background-color: #1b998b;
+  border-radius: 25px;
+  margin-top: 1em;
+  border: 5px solid #beffc7;
+}
+
+.towns section {
+  padding: 0.4em;
+  text-align: center;
+  margin: .5rem auto;
+  border: 5px solid #5f1721;
+  background-color: #beffc7;
+  border-radius: 25px;
+}
+
+.towns section img {
+  width: 90%;
+  margin: 1em auto;
+}
+
+/*//////////////main article content////////////////////////////*/
+#article-box {
+  color: white;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  background-color: var(--accent3-color);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+ }
+ .article-image {
+   width: 50%;
+   margin-top: 20px;
+   float: right;
+ }
+
+ /*--------------------------[MAP & CONTACT INFO]--------------------*/
+ #contact-map-info {
+   background-color: var(--accent1-color) ;
+   padding-top: 20px;
+   padding-bottom:5em ;
+   margin-top: 20px;
+   border-radius: 15px;
+ }
+
+ #contact-info {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+
+.contact-details {
+
+  text-align: center;
+}
+
+/*--------------------------[FOOTER]---------------------------------*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    border-color: var(--primary-color);
+    border-style: ridge;
+    border-width: thick;
+    clear: both;
+  }
+
+  /*--------------------------[SOCIAL MEDIA ICONS]--------------------*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 50px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+

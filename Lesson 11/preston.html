@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This pages will shows a plan of a weather site divied in four">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/small.css">
+    <link rel="stylesheet" type="text/css" href="CSS/medium.css">
+    <link rel="stylesheet" type="text/css" href="CSS/large.css">
+    <link rel="shortc-ut icon" href="../images/favicon.ico.JPG">
+    
+    <title>Daniel Larsen | myperfectweather.com</title>
+
+    <header>
+        <picture>
+            <img class="Main logo" src="../Lesson 3/official site logo.JPG" alt="Site plan logo"/>
+        </picture>
+        <section class="title">
+            <h1>My Perfect Weather</h1>
+            <div class="site-motto">Perfect weather for a perfect day.</div>
+        </section>
+    </header>
+</head>
+
+<body onload="saturdayBrunch()">
+    <div class= "friday-alert" style="display: none;">
+        Saturday = Pancake Breakfast in the Park! 9:00 A.M at City Park.
+    </div>
+  
+
+        
+    <div id= "hamberger" onclick= "toggleMenu()"></div>
+
+    <nav>
+        <ul  id= "navigaton" class="navigation">
+            <li><a id="ham" href="#"> &#9776;</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li class= "active"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Senter</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="hero">
+            <picture class="hero-ph">
+                <source media="(min-width: 1100px)" srcset="images/heroImg.1100.jpg">
+                <source media="(min-width: 800px)" srcset="images/heroImg.800.jpg">
+                <source media="(min-width: 600px)" srcset="images/heroImg.600.jpg">
+                <img src="images/heroImg.350.jpg" alt="Bright Sunrise">
+            </picture>
+
+            <div id="weather-summary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Weather Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>High:</td>
+                            <td><span id="temperature">30</span>&deg; F</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity:</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed">10</span> mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section class="forcast">
+            <h1 class="for-heading">Five Day Forcast</h1>
+            <ul id="fiveDayForcast"></ul>
+        </section>
+        
+        <div id="article-box">
+            <img class= "article-image" src= "images/article-image.jpg" alt= "Preston girls Vollyball team">
+            <h2>West side dominates firth, defends 2A state title</h2>
+            <h3>By Teresa Chipman</h3>
+            <p>The Lady Pirates represented West Side well at the 2A State volleyball tournament in Buhl, Oct. 30-21. Its the teams first championship title since 2011.
+
+                “It was a perfect ending to a long fight,” said Coach MeLinda Royer. “The girls played as a team the entire tournament!"
+                <br>
+                West Side opened the tourney with a decisive win in three over Valley, 25-14, 25-14, 25-8.
+                <br>
+                “The Pirates served tough with 12 aces,” said Royer. “We were aggressive at the net with a total of 31 kills.”
+                <br>
+                Laney Beckstead led with four of the 12 aces. Madalyn Barzee led the team in digs with 10 of the team's 37 digs. Kajsia Fuller led the team with nine kills and Emma Mariscal added eight more.
+                <br>
+                They dispatched Melba next losing the first set but coming back to win three straight 23-25, 25-19-25-18, 25-21. The win set them up for a final showdown against district rival Bear Lake for the championship match.
+                <br>
+                Teamwest Side had five aces with Laney Beckstead, TyLene Royer, Jesse Mariscal, Brittyn Jensen, and Abby Fuller all getting one. The team recorded 29 kills with Kajsia Fuller and Jesse Mariscal with seven each.  Madalyn Barzee led in digs with 15.
+                <br>
+                The Pirates lost the first set 22-25, but never lost focus. They tied it 1-1 in the second set (25-15) then dropped the third 20-25, putting themselves in a must win situation. West Side proved to be up for the challenge winning the next two 25-17 and 15-12 for the 2A State title....<a href="https://www.hjnews.com/preston/lady-pirates-bring-home-2a-volleyball-title/article_b5da8279-c85f-584a-aabb-c6b4b256adfe.html" target="_blank">continue to full article</a></p>
+        
+        </div>
+
+        <div id= "contact-map-info">
+            <section id= "contact-info">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.5534552387!2d-111.70894797707247!3d40.25731378829574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C+UT!5e0!3m2!1sen!2sus!4v1558816084893!5m2!1sen!2sus" allowfullscreen></iframe>
+                <section class= "contact-details">
+                    <h3>My Perfect Weather</h3>
+                    
+                    <p><strong>Address:</strong> Preston, Idaho</p>  
+                    <p><strong>Phone #:</strong> 865-956-4856</p>
+                    <p><strong>Email:</strong> myperfectweather@gmail.com</p>
+                    
+                </section>
+            </section>
+        </div>
+    </main>
+    <br>
+    
+    <footer>
+        <div class="footerButton">
+      <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning | </a>  <a href="../index.html">Main Portal</a></p>
+      <span id="lastModified"></span>
+      <script src="../JS/dateTime.js"></script>
+      <sript src="js/windchill.js"></sript>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
+         WebFont.load({
+            google: {
+            families: ['Patrick Hand', 'DM Serif Text', 'Reenie Beanie']
+            }
+        });
+      </script>
+      <br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    
+    </div>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src= "JS/main.js"></script>
+    <script src="JS/forcast.js"></script>
+    <script src="JS/windchill.js"></script>
+</body>
+
+</html>
