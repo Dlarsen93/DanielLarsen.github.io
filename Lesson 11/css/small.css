@@ -193,79 +193,79 @@
     border: 1px solid #1b998b;
     border-radius: 10px;
     padding: 0.5rem 2%; 
-}
-form legend {
-    color:#1b998b;
-    margin: 0 1rem;
-    padding: 0 0.5rem;
-    font-size: 1.2rem;
-}
-form label .top, form div {
-    display: block;
-    padding-top: 1rem;
-    color:#1b998b;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-form label.top, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1.2rem;
-    padding: 1rem;
-    color: #1b998b;
-    width: 85%;
-    max-width: 30rem;
-}
-form label.sbs {
-    display: block;
-    padding: 0.75em 0.75em;
-    color: #1b998b;
-}
+  }
+  form legend {
+      color:#1b998b;
+      margin: 0 1rem;
+      padding: 0 0.5rem;
+      font-size: 1.2rem;
+  }
+  form label .top, form div {
+      display: block;
+      padding-top: 1rem;
+      color:#1b998b;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+  form label.top, form label.top select {
+      -webkit-appearance: none;
+      display: block;
+      font-size: 1.2rem;
+      padding: 1rem;
+      color: #1b998b;
+      width: 85%;
+      max-width: 30rem;
+  }
+  form label.sbs {
+      display: block;
+      padding: 0.75em 0.75em;
+      color: #1b998b;
+  }
 
-form .danger {
-    padding: 0.75em 0.75em;
-    text-transform: uppercase;
-}
+  form .danger {
+      padding: 0.75em 0.75em;
+      text-transform: uppercase;
+  }
 
-form label.sbs input {
-    width: auto;
-}
+  form label.sbs input {
+      width: auto;
+  }
 
-form input.submitBtn {
-    border: none;
+  form input.submitBtn {
+      border: none;
+      background-color: #1b998b;
+      color: white;
+      border-radius: 1rem;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0 2rem 2%;
+      width: 96%;
+      max-width: 30rem;
+      font-size: 28px;
+  }
+  form input.submitBtn:hover {
+      background-color: #000;
+  }
+  form label.top input:required {
+      border-left: red solid 6px;
+  }
+
+  form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+
+  form input, form textarea {
+      border-radius: 0.3rem;
+      width: 100%;
+      padding: 0.5em;
+  }
+
+  .thanksResponse{
     background-color: #1b998b;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 30rem;
-    font-size: 28px;
-}
-form input.submitBtn:hover {
-    background-color: #000;
-}
-form label.top input:required {
-    border-left: red solid 6px;
-}
-
-form label.top input:required:valid {
-  border-left: green solid 6px;
-}
-
-form input, form textarea {
-    border-radius: 0.3rem;
-    width: 100%;
-    padding: 0.5em;
-}
-
-.thanksResponse{
-  background-color: #1b998b;
-  text-align: center;
-  color: #beffc7;
-  border-radius: 15px;
-  padding: 1rem;
-}
+    text-align: center;
+    color: #beffc7;
+    border-radius: 15px;
+    padding: 1rem;
+  }
 
   /*------------------Weekly Forcast-----------------*/
   .card {
@@ -297,7 +297,7 @@ form input, form textarea {
     margin: 0;
   }
  
-/*--------------------------[FRIDAY ALERT]---------------------------------*/
+  /*--------------------------[FRIDAY ALERT]---------------------------------*/
   .friday-alert {
     background-color: #e4e01d;
     color: black;
@@ -345,125 +345,125 @@ form input, form textarea {
   font-weight: bold;
   text-align: center;
   line-height: 0.8;
-}
-
-.towns h3 {
-  color: #beffc7;
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  background: #114b5f;
-  padding: 1em;
-  border-radius: 5px;
-}
- .towns {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-content: center;
-  grid-gap: 0.5em;
-  background-color: #1b998b;
-  border-radius: 25px;
-  margin-top: 1em;
-  border: 5px solid #beffc7;
-}
-
-.towns section {
-  padding: 0.4em;
-  text-align: center;
-  margin: .5rem auto;
-  border: 5px solid #5f1721;
-  background-color: #beffc7;
-  border-radius: 25px;
-}
-
-.towns section img {
-  width: 90%;
-  margin: 1em auto;
-}
-
-/*---------------main article content--------------------*/
-#article-box {
-  color: white;
-  font-size: 1.1em;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--primary-color);
-  background-color: var(--accent3-color);
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 15px;
- }
- .article-image {
-   width: 50%;
-   margin-top: 20px;
-   float: right;
- }
-
- /*--------------------------[MAP & CONTACT INFO]--------------------*/
- #contact-map-info {
-   background-color: var(--accent1-color) ;
-   padding-top: 20px;
-   padding-bottom:5em ;
-   margin-top: 20px;
-   border-radius: 15px;
- }
-
- #contact-info {
-   display: grid;
-   grid-template-columns: 1fr;
- }
-
-.contact-details {
-
-  text-align: center;
-}
-
-/*--------------------------[FOOTER]---------------------------------*/
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 0 50px 50px;
-    border-color: var(--primary-color);
-    border-style: ridge;
-    border-width: thick;
-    clear: both;
   }
 
-  /*--------------------------[SOCIAL MEDIA ICONS]--------------------*/
-  .fa {
-    padding: 20px;
-    font-size: 30px;
+  .towns h3 {
+    color: #beffc7;
+    font-size: 1em;
+    font-weight: bold;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 3px;
-    border-radius: 50px;
+    background: #114b5f;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  .towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0.5em;
+    background-color: #1b998b;
+    border-radius: 25px;
+    margin-top: 1em;
+    border: 5px solid #beffc7;
   }
 
-  .fa:hover {
-    opacity: 0.7;
+  .towns section {
+    padding: 0.4em;
+    text-align: center;
+    margin: .5rem auto;
+    border: 5px solid #5f1721;
+    background-color: #beffc7;
+    border-radius: 25px;
   }
 
-  .fa-facebook {
-    background: #3B5998;
+  .towns section img {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  /*---------------main article content--------------------*/
+  #article-box {
     color: white;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--accent3-color);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .article-image {
+    width: 50%;
+    margin-top: 20px;
+    float: right;
   }
 
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  /*--------------------------[MAP & CONTACT INFO]--------------------*/
+  #contact-map-info {
+    background-color: var(--accent1-color) ;
+    padding-top: 20px;
+    padding-bottom:5em ;
+    margin-top: 20px;
+    border-radius: 15px;
   }
 
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
+  #contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .fa-instagram {
-    background: #125688;
-    color: white;
+  .contact-details {
+
+    text-align: center;
   }
+
+  /*--------------------------[FOOTER]---------------------------------*/
+
+  footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 50px 50px;
+      border-color: var(--primary-color);
+      border-style: ridge;
+      border-width: thick;
+      clear: both;
+    }
+
+    /*--------------------------[SOCIAL MEDIA ICONS]--------------------*/
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 3px;
+      border-radius: 50px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
 
