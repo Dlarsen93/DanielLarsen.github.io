@@ -1,24 +1,4 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b';
-
-//const todayForcastUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&id=5607743&appid=cc2a9728fbac4669b86898fecbccc39b';
-
-/*if (document.getElementById("weathername").innerHTML.indexOf("Preston") != -1) {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b";
-} else if (document.getElementById("weathername").innerHTML.indexOf("Soda") != -1) {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b";
-} else {
-    apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b";
-}*/
-
-// Weather summery
-/*fetch(todayForcastUrl)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        document.getElementById('currentDescription').innerHTML = jsObject.weather[0].main;
-        document.getElementById('currentTemperature').innerHTML = Math.round(jsObject.main.temp) + '&deg; F';
-        document.getElementById('currentHumidity').innerHTML = jsObject.main.humidity;
-        document.getElementById('currentWindSpeed').innerHTML = Math.round(jsObject.wind.speed) + ' mph';
-    });*/
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b';
 
 fetch(apiURL)
   .then((response) => response.json())
