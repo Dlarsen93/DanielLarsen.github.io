@@ -38,7 +38,7 @@
 		
 	}
 
-	/*town cards*/
+	/*-------town cards------------*/
 	
 	.towns section:nth-child(2) {
         flex-direction: row-reverse;
@@ -80,4 +80,22 @@
     .forcast ul li i {
         display: block;
     }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 5px 5px 3px #5f1721;
+        background-color: #beffc7;
+        border-radius: 10px;
+        margin: 1em;
+        padding: 1em;
+    }
+
+      /*--------------Map & Contact Info------------*/
+ 
+
+    #contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  }
 }

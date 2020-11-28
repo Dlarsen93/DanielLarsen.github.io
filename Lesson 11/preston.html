@@ -30,8 +30,6 @@
         Saturday = Pancake Breakfast in the Park! 9:00 A.M at City Park.
     </div>
   
-
-        
     <div id= "hamberger" onclick= "toggleMenu()"></div>
 
     <nav>
@@ -39,8 +37,8 @@
             <li><a id="ham" href="#"> &#9776;</a></li>
             <li><a href="home.html">Home</a></li>
             <li class= "active"><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="sodaspring.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Senter</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -65,23 +63,23 @@
                     <tbody>
                         <tr>
                             <td>Currently:</td>
-                            <td>Sunny</td>
+                            <td><span id="currentDescription"></span></td>
                         </tr>
                         <tr>
-                            <td>High:</td>
-                            <td><span id="temperature">30</span>&deg; F</td>
+                            <td>Temperature:</td>
+                            <td><span id="currentTemperature"></span></td>
                         </tr>
                         <tr>
                             <td>Wind Chill:</td>
-                            <td><span id="windChill"></span></td>
+                            <td><span id="currentWindChill"></span></td>
                         </tr>
                         <tr>
                             <td>Humidity:</td>
-                            <td>50%</td>
+                            <td><span id="currentHumidity"></span></td>
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td><span id="windSpeed">10</span> mph</td>
+                            <td><span id="currentWindSpeed"></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -137,7 +135,6 @@
       <p>&copy;2020 My Perfect Weather | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning | </a>  <a href="../index.html">Main Portal</a></p>
       <span id="lastModified"></span>
       <script src="../JS/dateTime.js"></script>
-      <sript src="js/windchill.js"></sript>
       
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
       <script>

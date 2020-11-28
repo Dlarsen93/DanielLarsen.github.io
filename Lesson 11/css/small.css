@@ -178,8 +178,7 @@
     color: black;
     background-color: rgba(190, 255, 199);
     border-radius: 25px;
-    z-index: 2;
-    
+    z-index: 2; 
   }
   
   #hero table th {
@@ -268,15 +267,12 @@ form input, form textarea {
   padding: 1rem;
 }
 
-  /*///////////////////Weekly Forcast/////////////////////////*/
-
-  .weather-summary {
-    padding: 1.2em;
-    top: 1em;
-    left: 4.5em;
-  }
+  /*------------------Weekly Forcast-----------------*/
   .card {
+    display: grid;
+    grid-template-columns: 1fr;
     box-shadow: 5px 5px 3px #5f1721;
+    background-color: #beffc7;
     border-radius: 10px;
     margin: 1em;
     padding: 1em;
@@ -300,23 +296,7 @@ form input, form textarea {
     width: 100%;
     margin: 0;
   }
-  /*--------------------------[HERO IMAGE]---------------------------------*/
-  .heroimg {
-    margin-top: 0;
-    padding-right: 5.5em;
-  }
-  
-  .heroimg img {
-    width: 15%;
-    margin: 0 auto;
-    display: block;
-  }
-  
-  .herodiv {
-    margin: 5px auto;
-    position: relative;
-  }
-
+ 
 /*--------------------------[FRIDAY ALERT]---------------------------------*/
   .friday-alert {
     background-color: #e4e01d;
@@ -402,7 +382,7 @@ form input, form textarea {
   margin: 1em auto;
 }
 
-/*//////////////main article content////////////////////////////*/
+/*---------------main article content--------------------*/
 #article-box {
   color: white;
   font-size: 1.1em;
@@ -432,7 +412,7 @@ form input, form textarea {
 
  #contact-info {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
  }
 
 .contact-details {

@@ -21,7 +21,7 @@
 	}
 	.navigation li:first-child {
 		display: none;
-	}
+    }
 
 	#weather-summary {
         grid-column-start: 1;
