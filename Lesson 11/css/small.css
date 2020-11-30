@@ -132,7 +132,7 @@
       text-align: center;
       text-decoration: none;
       color: white;
-    font-weight: 700;
+      font-weight: 700;
   }
   .navigation a:hover {
       color: black;
@@ -144,9 +144,6 @@
       display: block;
   }
 
-  .clickLink {
-    color: #beffc7;
-  }
 
   /*///////////////////////Hero image and weather summary///////////////////////////*/
 
