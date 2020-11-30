@@ -144,6 +144,10 @@
       display: block;
   }
 
+  .clickLink {
+    color: #beffc7;
+  }
+
   /*///////////////////////Hero image and weather summary///////////////////////////*/
 
   #hero {
