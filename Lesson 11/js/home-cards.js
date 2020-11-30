@@ -34,19 +34,6 @@ fetch(requestURL)
                 townInfo.append(textBox, image);
 
                 document.querySelector('div.towns').appendChild(townInfo);
-                
-                //Practice
-                /*
-                let card = document.createElement('section');
-                let h2 = document.createElement('h2');
-                let image = document.createElement('img');
-
-                h2.innerHTML = `${towns[i].name} <span class="highlight">${towns[i].name}</span>`;
-                image.setAttribute('src', 'images/', + towns[i].photo);
-
-                card.appendChild(h2);
-                */
-
                 }
 
         }
