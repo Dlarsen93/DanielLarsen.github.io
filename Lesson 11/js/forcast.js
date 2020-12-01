@@ -2,6 +2,8 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit
 
 const summaryapi = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b";
 
+const eventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
 fetch(summaryapi)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -61,3 +63,42 @@ fetch(apiURL)
 
     }
 });
+
+fetch(eventURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+    console.log(jsObject); //be sure to delete this before submitting!
+    let eventList = jsObject.events[0].events;
+    let eventInfo = document.createElement('p');
+})
+
+
+/**function getTownEvents(town) {
+    let url = "https://byui-cit230.github.io/weather/data/towndata.json";
+    fetch(url)
+        .then((response) => response.json())
+        .then((jsonObject) => {
+
+            const towns = jsonObject['towns'];
+            for (let i = 0; i < towns.length; i++) {
+
+                if (towns[i].name == town) {
+
+                    for (let e = 0; e < towns[i].events.length; e++) {
+
+
+                        console.log(towns[i].events[e])
+
+                        let eventCard = document.createElement('div');
+                        eventCard.setAttribute('class', 'event-card');
+
+                        eventCard.textContent = towns[i].events[e];
+                        document.getElementById('events').appendChild(eventCard);
+                    }
+
+                }
+
+
+            }
+        });**/
+    
