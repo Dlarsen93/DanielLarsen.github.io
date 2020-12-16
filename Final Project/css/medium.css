@@ -1,0 +1,105 @@
+/* Media Query for medium+ views */
+@media only screen and (min-width: 35em) {
+    :root {
+        --primary-color: #82DDF0;
+        --secondary-color: #F15946;
+        --accent1-color: #86CD82;
+        --accent2-color: #E7E247;
+        --accent3-color: #D3C4D1;
+    }
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	
+	
+
+	#weather-summary {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin: 10px 0 0 10px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+	}
+	
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		
+	}
+
+	/*-------town cards------------*/
+	
+	.towns section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .towns section img {
+        width: 50%;
+        margin: 1em;
+    }
+
+    .towns div {
+        width: 50%;
+	}
+	
+	.towns section {
+        background-color: #beffc7;
+        padding: 2em;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+	}
+	
+	/*-----------weekly Forcast-----------*/
+	.forcast ul {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .forcast ul li {
+        margin: 0.5em 0.2em;
+        padding: 1.5em;
+        background-color: #beffc7;
+        color: #481620;
+    }
+
+    .forcast ul li i {
+        display: block;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 5px 5px 3px #F15946;
+        border-radius: 10px;
+        margin: 1em;
+        padding: 1em;
+    }
+
+      /*--------------Map & Contact Info------------*/
+ 
+
+    #contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+      grid-template-columns: 1fr 1fr;
+  }
+}

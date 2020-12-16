@@ -1,0 +1,52 @@
+{
+    "vehicles": [
+      {
+        "name": "Honda Metro Scooter",
+        "max_capacity": "1",
+        "reservation_half": "$20",
+        "reservation_full": "$30",
+        "walkin_half": "$25",
+        "walkin_full": "$35"
+      },
+      {
+        "name": "Honda Dio Scooter",
+        "max_capacity": "2",
+        "reservation_half": "$30",
+        "reservation_full": "$40",
+        "walkin_half": "$35",
+        "walkin_full": "$45"
+      },
+      {
+        "name": "Honda PCX150 Scooter",
+        "max_capacity": "2",
+        "reservation_half": "$40",
+        "reservation_full": "$50",
+        "walkin_half": "$45",
+        "walkin_full": "$55"
+      },
+      {
+        "name": "Honda Pioneer ATV",
+        "max_capacity": "4",
+        "reservation_half": "$50",
+        "reservation_full": "$70",
+        "walkin_half": "$60",
+        "walkin_full": "$80"
+      },
+      {
+        "name": "Jeep Wrangler - 4 door with a/c",
+        "max_capacity": "5",
+        "reservation_half": "$70",
+        "reservation_full": "$100",
+        "walkin_half": "$85",
+        "walkin_full": "$125"
+      },
+      {
+        "name": "Jeep Wrangler - 2 door",
+        "max_capacity": "4",
+        "reservation_half": "$60",
+        "reservation_full": "$85",
+        "walkin_half": "$70",
+        "walkin_full": "$90"
+      } 
+    ]
+  }
