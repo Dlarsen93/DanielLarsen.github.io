@@ -78,6 +78,11 @@
 	.towns div {
 		width: 100%;
 	}
+	/*----------Form----------*/
+	#form{
+        padding: 0 165px; 
+        margin: 60px auto;
+    }
 	/*--------Weekly Forcast---------*/
 	.card {
 		box-shadow: 5px 5px 3px #F15946;

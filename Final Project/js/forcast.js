@@ -1,5 +1,3 @@
-
-
 const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.4230&lon=86.9223&units=imperial&appid=cc2a9728fbac4669b86898fecbccc39b';
 
 fetch(apiURL)

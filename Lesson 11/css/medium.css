@@ -59,7 +59,9 @@
         text-align: center;
         display: flex;
         flex-direction: row;
-	}
+    }
+    
+    /*------form--------*/
 	
 	/*-----------weekly Forcast-----------*/
 	.forcast ul {

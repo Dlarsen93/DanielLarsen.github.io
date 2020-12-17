@@ -37,30 +37,46 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		
-	}
+    }
+    
+    /*//////////////Reservations Page/////////////////*/
 
-	/*-------town cards------------*/
-	
-	.towns section:nth-child(2) {
-        flex-direction: row-reverse;
+    /*-----------Content----------*/
+    #list li {
+        list-style-type: square;
+        padding: 0;
+        font-size: 15px;
+        text-align: left;
     }
 
-    .towns section img {
-        width: 50%;
-        margin: 1em;
+    #list-grid-box {
+        display: grid;
+        grid-template-areas:
+            'left right';
     }
 
-    .towns div {
-        width: 50%;
-	}
-	
-	.towns section {
-        background-color: #beffc7;
-        padding: 2em;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-	}
+
+    #right {
+        margin: auto;
+        grid-area: right;
+    }
+
+    #left {
+        grid-area: left;
+    }
+    /*----------Form----------*/
+    form label.top input,
+    form label.top select,
+    form label.top select.option {
+        -webkit-appearance: none;
+        display: block;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        max-width: 85%;
+        background-color: white;
+    }
 	
 	/*-----------weekly Forcast-----------*/
 	.forcast ul {
