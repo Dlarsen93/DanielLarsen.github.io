@@ -109,9 +109,9 @@ nav ul li a {
 
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-nav ul li .active a {
-   background-color: rgba(0,0,0,0.2); 
-   color:rgb(58, 8, 8)
+.active  {
+   background-color: var(--accent1-color); 
+   color:white;
   }
 
  .navigation {
