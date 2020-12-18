@@ -445,6 +445,9 @@ border-radius: 25px 25px 0px 0px;
     text-align: center;
   }
 
+  .thanks-card {
+    font-size: 3rem;
+  }
   /*--------------------------[FOOTER]---------------------------------*/
 
   footer {
