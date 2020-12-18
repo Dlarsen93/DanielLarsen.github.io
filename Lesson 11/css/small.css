@@ -317,7 +317,7 @@
     font-size: 20;
   }
 
- /*--------------------------[IMAGE GALLERY]----------------------*/
+ /*--------------------------[TOUR GALLERY]----------------------*/
  .gallery {
      display: grid;
      grid-template-columns: 1fr;

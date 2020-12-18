@@ -300,7 +300,7 @@ nav ul li .active a {
   form label.form-fill {
       display: block;
       padding: 0.75em 0.75em;
-      color: #1b998b;
+      color: green;
   }
 
   form .danger {
@@ -314,7 +314,7 @@ nav ul li .active a {
 
   form input.submitBtn {
       border: none;
-      background-color: #1b998b;
+      background-color: #86CD82;
       color: white;
       border-radius: 1rem;
       padding: 0.75rem 1.5rem;
@@ -347,6 +347,32 @@ nav ul li .active a {
     border-radius: 15px;
     padding: 1rem;
   }
+
+  /*//////////////tours page//////////////*/
+
+  /*--------------[TOUR GALLERY]-----------*/
+ .gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;   
+}
+
+.gallery figure {
+  text-align: center;
+  font-size: large;
+}
+
+.gallery figure img {
+border-radius: 25px 25px 0px 0px;
+}
+
+.gallery figcaption {
+  display: block;
+  background-color: var(--accent1-color);
+  padding: 1em;
+  font-family: 'Indie Flower';
+  border-radius: 0px 0px 25px 25px;
+}
 
   /*------------------Weekly Forcast-----------------*/
   .card {
@@ -397,21 +423,25 @@ nav ul li .active a {
   }
 
   /*--------------------------[MAP & CONTACT INFO]--------------------*/
-  #contact-map-info {
+  .contact-map-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--accent1-color) ;
     padding-top: 20px;
     padding-bottom:5em ;
     margin-top: 20px;
-    border-radius: 15px;
   }
 
-  #contact-info {
-    display: grid;
-    grid-template-columns: 1fr;
+  .mapleft {
+    grid-column: 1;
+    border: solid 5px white;
   }
 
+  .mapright {
+    grid-column: 3;
+  }
   .contact-details {
-
+    grid-column: 1 / 4;
     text-align: center;
   }
 
